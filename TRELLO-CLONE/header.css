@@ -6,6 +6,10 @@
     align-items:center;
     /* padding-top:10px; */
     background-color:pink;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
 }
 .right-section{
     width:400px;
