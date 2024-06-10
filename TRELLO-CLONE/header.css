@@ -5,11 +5,18 @@
     flex-direction:row;
     align-items:center;
     /* padding-top:10px; */
-    background-color:pink;
+    /* background-color:pink; */
     position:fixed;
     top:0;
     left:0;
     right:0;
+    z-index:1000;
+    cursor:pointer;
+    transition: box-shadow 0.15s;
+}
+.header:hover{
+    box-shadow:10px 10px 5px rgb(176,196,222);
+    
 }
 .right-section{
     width:400px;
@@ -98,10 +105,14 @@
     padding-bottom:17px;
     font-style:bold;
     /* padding:17px; */
+    transition:background-color 0.15s;
     
 }
+.free-trello:hover{
+    background-color:rgb(5, 53, 184);
+}
 .free-trello,.log-in{
-    font-family : Asap,Omnibus;
+    font-family: "Asap", sans-serif;
 }
 .log-in{
     margin-right:20px;
