@@ -11,3 +11,22 @@
     padding : 15px 5px;
     font-family: "Asap", sans-serif;
 }
+.main-container{
+    display : grid;
+    grid-template-columns:1fr 1fr;
+    justify-items:center;
+    align-items:center;
+    
+
+}
+.trello-intro h2{
+    font-family: "Raleway", sans-serif;
+    padding-inline: 50px;
+}
+.play-button{
+    width:100%;
+}
+.video-link-icon{
+    width:20px;
+    height:20px;
+}
