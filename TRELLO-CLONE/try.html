@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Background</title>
+    <style>
+        .flex-button {
+            
+            border: none;
+            width: 450px;
+            height: 200px;
+            margin-inline: 15px;
+            margin-block: 15px;
+            transition: box-shadow 1s, background-color 1s;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 10px;
+            text-align: left;
+          
+        }
+
+        .flex-button:active {
+            box-shadow: 10px 10px 0px 0px rgba(144, 238, 191, 0.5);
+            background-color: white;
+        }
+
+        .flex-button h3 {
+            margin: 0;
+        }
+
+        .flex-button p {
+            margin: 10px 0 0 0;
+            line-height: 1.5;
+            color: rgb(17, 4, 4);
+            <!-- font-weight: 700; -->
+            font-size: 14px;
+            font-family: Roboto, sans-serif;
+        }
+        background: linear-gradient(0deg, rgb(230, 252, 255), rgb(255, 255, 255)) 0% 0% / auto repeat scroll padding-box border-box rgb(178, 212, 255);   
+        .grid-item-three {
+            background-color: rgba(21, 187, 238, 0.1);
+            <!-- background: linear-gradient(
+                to bottom,
+                rgb(166, 233, 232),
+                rgba(202, 242, 241, 0.3),
+                rgb(202, 242, 241)
+            ); -->
+            grid-column: 1 / -1;
+            flex-direction: column;
+            align-self: start;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-item-three">
+        <button class="flex-button">
+            <h3>Boards</h3>
+            <p>Trello boards keep tasks organized and work moving forward. In a glance, see everything from "things to do" to "aww yeah, we did it!"</p>
+        </button>
+        <button class="flex-button">
+            <h3>Lists</h3>
+            <p>The different stages of a task. Start as simple as To Do, Doing, or Done - or build a workflow custom fit to your team's needs. There's no wrong way to Trello.</p>
+        </button>
+        <button class="flex-button">
+            <h3>Cards</h3>
+            <p>Cards represent tasks and ideas and hold all the information to get the job done. As you make progress, move cards across lists to show their status.</p>
+        </button>
+    </div>
+</body>
+</html>
