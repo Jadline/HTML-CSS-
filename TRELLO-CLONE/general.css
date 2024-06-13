@@ -295,7 +295,7 @@
     display : flex;
     flex-direction : row;
     /* background-color : yellow; */
-    padding-bottom : 100px;
+    padding-bottom : 50px;
     padding-left : 15px;
    
 }
@@ -368,4 +368,38 @@
     font-size : 20px;
     margin-bottom : 10px;
   }
+  .final-content{
+    /* background-color : yellow; */
+    display : flex;
+    justify-content : space-between;
+    padding-top:25px;
+    padding-bottom:40px;
+    /* padding-block : 25px; */
+    padding-inline : 15px;
+  }
+  .final-content p{
+    font-family: "Asap", sans-serif;
+    /* background-color : lightblue; */
+    font-size : 20px;
+    flex : 250px;
+    margin-right : 50px;
+    line-height : 1.5;
+    
+    
+  }
+.final-content button{
+    width : 250px;
+    height : 50px;
+    border-width : 2px;
+    border-radius : 10px;
+    border-color : rgb(105, 105, 233);
+    font-family: "Raleway", sans-serif;
+    background-color : white;
+
+}
+.final-content button:hover{
+    background-color :#ADD8E6;    
+   
+}
+
   
