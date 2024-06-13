@@ -202,9 +202,9 @@
     font-size : 16px;
     line-height : 1.5;
 }
-.flex-button{
+/* .flex-button{
     background-color : #caf2f1;
-    /* opacity : 0.8; */
+    opacity : 0.8;
     border : none;
     width : 450px;
     height : 200px;
@@ -212,26 +212,32 @@
     margin-block : 15px;
     transition : box-shadow 0.15s,background-color 0.15s;
     
-}
-.flex-button:click {
+} */
+/* .flex-button:click {
     box-shadow: 10px 10px 0px 0px rgba(144, 238, 191,0.5);
     background-color : white;
-}
+} */
 .grid-item-three{
-    background:linear-gradient (to bottom,
-    rgb(166, 233, 232)
-    rgba(202, 242, 241,0.3),
-    rgb(202, 242, 241)
-    ) ;
+    background : linear-gradient(0deg, rgb(230, 252, 255), rgb(255, 255, 255));
+    display : flex;
+    flex-direction : column;
     grid-column : 1/-1;
     /* background-color:aqua;
     display:flex; */
-    flex-direction:column;
     align-self : start;
     margin-left : 200px;
     margin-right: 200px;
     
 
+}
+.flex-button{
+    background-color :rgba(230,252,255,0.4);
+    width :300px;
+    height : 150px;
+    margin-bottom : 10px;
+    margin-inline : 10px;
+    border:none;
+    box-shadow : 10px 10px 5px rgba(100,110,112,0.3); 
 }
 .flex-button h3,
 .flex-button p{
