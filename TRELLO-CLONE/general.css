@@ -228,7 +228,6 @@
     margin-left : 200px;
     margin-right: 200px;
     
-
 }
 .flex-button{
     background-color :rgba(230,252,255,0.4);
@@ -241,21 +240,132 @@
 }
 .flex-button h3,
 .flex-button p{
-  font-size : 14px;
-  font-family : Roboto,sans-serif;
-  text-align: left;
+    font-family: "Asap", sans-serif;
+    text-align : left;
+    line-height : 1.5;
+    margin-left:5px;
+    color : black;
+    font-size : 14px;
+    padding-inline:5px;
+  
 }
-.flex-button h3{
+.flex-button:hover{
+    background-color : white;
+}
+/* .flex-button h3{
     margin-bottom : 5px;
     margin-top : 5px;
     margin-left : 5px;
-}
-.flex-button p{
+} */
+/* .flex-button p{
     --font-family-text: 'Charlie Text', sans-serif;
     --font-family-display: 'Charlie Display', sans-serif;
     font-family : var(--font-family-text);
     line-height : 1.5;
     color : rgb(17, 4, 4);
-    /* font-weight:700; */
+    font-weight:700;
+
+} */
+
+/*styling the cards*/
+.grid-item-four{
+    grid-column:1/-1;
+    align-items:flex-start;
+    justify-content : center;
+    padding-left :200px;
+   
+    
+   
+}
+.grid-item-four h3,
+.grid-item-four h2{
+    text-align : left;
+    font-family: "Raleway", sans-serif;
+}
+.grid-item-four h3{
+    padding-top : 60px;
+    margin-bottom : 20px;
+}
+.grid-item-four h2{
+    margin-bottom : 50px;
+    font-size : 40px;
+    
+}
+.flex-cards-items{
+    display : flex;
+    flex-direction : row;
+    /* background-color : yellow; */
+    padding-bottom : 100px;
+    padding-left : 15px;
+   
+}
+.flex-card{
+  background-color : white;
+  margin-right : 30px;
+  margin-top : 30px;
+  height : 200px;
+  width : 350px;
+  box-shadow : 10px 10px 5px rgb(134,134,134);
+  position : relative;
+}
+.card-one::after{
+  content : "";
+  background-color : red;
+  width : 100%;
+  height:50px;
+  position : absolute;
+  top : 0;
+  left :0; 
+}
+.card-two::after{
+  content : "";
+  background-color : orange;
+  width : 100%;
+  height:50px;
+  position : absolute;
+  top : 0;
+  left :0; 
+}
+.card-three::after{
+    content : "";
+    background-color : lightgreen;
+    width : 100%;
+    height:50px;
+    position : absolute;
+    top : 0;
+    left :0;
 
 }
+
+.new-img{
+    background-color : white;
+    border-radius : 5px;
+    width : 50px;
+    height : 50px;
+    position : absolute;
+    top:20px;
+    left:20px;
+    z-index:250;
+  
+   
+  }
+  .new-img img {
+    width : 100%;
+  }
+  .content h3,
+  .content p{
+    text-align : left;
+    padding-left:15px;
+  }
+  .content{
+    padding-top: 40px;
+  }
+  .content p{
+    font-size : 18px;
+    line-height : 1.5;
+  }
+  .content h3{
+    font-size : 20px;
+    margin-bottom : 10px;
+  }
+  
