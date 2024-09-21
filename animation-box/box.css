@@ -1,0 +1,163 @@
+*{
+    margin : 0;
+    padding : 0;
+    position : relative;
+    box-sizing : box-sizing;
+}
+body {
+    background-color : black;
+    font-family : monospace;
+}
+.box-item {
+    background-color : red;
+    height : auto;
+    width : 10px;
+    /* position : absolute; */
+    margin-right : 3px;
+    font-size: 0; /* Font size 0 initially */
+    font-weight: normal; /* Normal font weight initially */
+    display: flex;
+    justify-content: center;
+    animation-name : box-item;
+    animation-fill-mode : forwards;
+    animation-duration : 3s;
+    animation-timing-function : ease-in;
+    color : white;
+  
+}
+@keyframes box-item {
+    0% {
+        background-color :red;      
+        opacity : 0;
+        transform : translateY(50);
+        width : 10px;
+        margin-right : 3px;
+        font-size : 0;
+        
+    }
+    /* 25% {
+        background-color : purple;
+    }
+    50% {
+        background-color : blue;
+    }
+    75% {
+        background-color : green;
+    } */
+     
+     100% {
+        background: linear-gradient(360deg,#db1305,
+        #1206b3);
+      
+        opacity : 1;
+        transform : translateY(0);
+        width : 100px;
+        margin-right : 0;
+        font-size : 60px;
+        display : flex;
+        align-items : center;
+        justify-content : center;
+        
+     }
+}
+.container {
+    display : flex;
+    width : 600px;
+    height : 400px;
+    margin : auto;
+    padding-top : 100px;
+   
+}
+
+.box-1 {
+    animation-delay : 0s;
+}
+.box-2 {
+    animation-delay : 0.2s;
+}
+.box-3 {
+    animation-delay : 0.4s;
+}
+.box-4{
+    animation-delay : 0.6s;
+}
+.box-5{
+    animation-delay : 0.8s;
+}
+.box-6{
+    animation-delay : 1s;
+}
+.box-7{
+    animation-delay : 1.2s;
+}
+.box-8{
+    animation-delay : 1.4s;
+}
+.box-9{
+    animation-delay : 1.6s;
+}   
+
+.box-10{
+    animation-delay : 1.8s;
+}
+.box-11{
+    animation-delay : 2s;
+}
+.box-12{
+    animation-delay : 2.2s;
+}
+.box-13{
+    animation-delay : 2.4s;
+}
+.box-14{
+    animation-delay : 2.6s;
+}
+.box-15{
+    animation-delay : 2.8s;
+}
+.box-16{
+    animation-delay : 3s;
+}
+.box-17{
+    animation-delay : 3.2s;
+}
+.box-18{
+    animation-delay : 3.4s;
+}
+
+.box-19{
+    animation-delay : 3.6s;
+}
+.box-20{
+    animation-delay : 3.8s;
+}
+.box-21{
+    animation-delay : 4.0s;
+}
+.box-22{
+    animation-delay : 4.2s;
+}
+.box-23{
+    animation-delay : 4.4s;
+}
+.box-24{
+    animation-delay : 4.6s;
+}
+.box-25{
+    animation-delay : 4.8s;
+}
+.box-26{
+    animation-delay : 5.0s;
+}
+.box-27{
+    animation-delay : 5.2s;
+}
+.box-28{
+    animation-delay : 5.4s;
+}
+.box-29{
+    animation-delay : 5.6s;
+}
+.box-30{
+    animation-delay : 5.8s;
+}
