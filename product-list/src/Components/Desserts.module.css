@@ -1,0 +1,18 @@
+.dessertsContainer {
+    max-width : 60%;
+    /* background-color : red; */
+    /* height : 100vh; */
+    margin-top: 7rem;
+    margin-left :7rem;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    column-gap : 20px;
+    padding : 3rem;
+    font-size : 1.6rem;
+}
+.dessertsHeading {
+    position:absolute;
+    top:3rem;
+    left:11rem;
+    font-size : 3.6rem;
+}
