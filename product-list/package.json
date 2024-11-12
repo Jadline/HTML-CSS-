@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "product:api" : "json-server --watch ./data.json --port 5500"
+    "product:api": "json-server --watch ./data.json --port 5500"
   },
   "dependencies": {
     "react": "^18.3.1",

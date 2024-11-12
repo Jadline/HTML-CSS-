@@ -1,5 +1,6 @@
 .dessertsContainer {
     max-width : 60%;
+    /* flex-basis : 70%; */
     /* background-color : red; */
     /* height : 100vh; */
     margin-top: 7rem;

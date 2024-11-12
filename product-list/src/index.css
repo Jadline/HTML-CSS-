@@ -22,5 +22,6 @@ body{
 .app {
   display : flex;
   gap:3rem;
+  width : 100%;
   
 }
