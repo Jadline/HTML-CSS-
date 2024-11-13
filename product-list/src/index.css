@@ -6,6 +6,22 @@
 html {
   font-size : 62.5%;
 }
+@media (max-width : 375px){
+  html {
+    font-size : 31.25%;
+  }
+  .app {
+    flex-direction : column;
+  }
+}
+@media (max-width : 768px){
+  html {
+    font-size : 33.75%;
+  }
+  .app {
+    flex-direction : column;
+  }
+}
 
 *,
 *::after,
@@ -17,11 +33,25 @@ html {
 body{
   font-family: "Red Hat Text", sans-serif;
   background-color:var(--rose-background-color);
+  width : 100vw;
+
  
 }
 .app {
   display : flex;
   gap:3rem;
   width : 100%;
+  z-index:1
+  
+}
+.background-overlay{
+  content : '';
+  width : 100%;
+  height : 100%;
+  display : block;
+  background-color : hsla(14, 65%, 9%,0.2);
+  backdrop-filter : blur(0.03px);
+  z-index : 2;
+  position : fixed;
   
 }

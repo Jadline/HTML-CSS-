@@ -6,9 +6,12 @@ export const cartContext = createContext()
 
 
 function App() {
-  const URL = 'http://localhost:5500/products';
+  const URL = 'http://localhost:5502/products';
   const[productsdata,setProductsData] = useState([]);
   const[cartitems,setCartitems] = useState([])
+  const [showmodal,setshowmodal] = useState(false)
+  
+
   
   useEffect(() => {
     async function fetchProducts(){
@@ -25,12 +28,18 @@ function App() {
   <cartContext.Provider value={{
     products:productsdata,
     cartitems,
-    setCartitems
+    setCartitems,
+    showmodal,
+    setshowmodal,
+    
   }}>
-        <div className='app'>
+    <div className='app'>
         <Desserts />
         <Cart/>
+        {showmodal && <div className='background-overlay'></div>}
       </div>
+     
+     
    </cartContext.Provider>
   )
 }

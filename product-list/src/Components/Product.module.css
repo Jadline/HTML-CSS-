@@ -2,6 +2,8 @@
     display : flex;
     flex-direction : column;
     position:relative;
+    width : 100%;
+    height : 100%;
 }
 
 .productImage {
@@ -38,7 +40,7 @@
     justify-content : center;
     align-items :center;
     font-size : 1.4rem;
-    gap:1rem;
+    gap:2rem;
     font-weight:bold;
     /* padding: 1rem 0.5rem; */
     padding:1rem;
@@ -51,5 +53,37 @@
     left:50%;
     transform:translate(-50%,-50%);
     background-color: #fff;
+}      
+@media (max-width : 768px){
+    .addtocartBtn{
+        padding : 0.5rem;
+        top : 75%;
+    }
+    .quantitybutton{
+        padding : 0.25rem;
+    }
 }
 
+.quantitybutton {
+   background-color : hsl(14, 86%, 42%);
+   border-radius : 50%;
+   width : 100%;
+   height : 100%;
+   border : 0.2rem solid #fff;
+   outline : none;
+   aspect-ratio : 2/2;
+   padding : 0.5rem;
+   display : flex;
+   align-items :center;
+   justify-content :center;
+  
+
+}
+.computebutton {
+    background-color : hsl(14, 86%, 42%);
+    color : #fff;
+    font-size : 1.8rem;
+}
+.addborder {
+    border : 0.1rem solid hsl(14, 86%, 42%);
+}

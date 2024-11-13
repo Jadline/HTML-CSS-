@@ -7,10 +7,25 @@
     margin-left :7rem;
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    column-gap : 20px;
+    column-gap : 2rem;
     padding : 3rem;
     font-size : 1.6rem;
 }
+@media (max-width : 375px){
+    .dessertsContainer{
+        grid-template-columns : 1fr;
+        max-width : 100%;
+    }
+}
+@media (max-width: 768px) {
+    
+    .dessertsContainer {
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
 .dessertsHeading {
     position:absolute;
     top:3rem;
