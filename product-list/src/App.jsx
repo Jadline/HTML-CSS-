@@ -6,7 +6,7 @@ export const cartContext = createContext()
 
 
 function App() {
-  const URL = 'http://localhost:5502/products';
+  // const URL = 'http://localhost:5502/products';
   const[productsdata,setProductsData] = useState([]);
   const[cartitems,setCartitems] = useState([])
   const [showmodal,setshowmodal] = useState(false)
@@ -15,9 +15,9 @@ function App() {
   
   useEffect(() => {
     async function fetchProducts(){
-      const res = await fetch(URL);
+      const res = await fetch('/data.json');
       const data = await res.json()
-      setProductsData(data)
+      setProductsData(data.products)
     }
     fetchProducts()
   },[])
