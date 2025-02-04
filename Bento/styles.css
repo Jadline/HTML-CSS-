@@ -36,36 +36,163 @@ body {
 /* ui components  */
 .create {
     background-color : var(--clr-Yellow-100);
+    display : grid;
+    place-content : center;
+    gap : 1rem;
+    padding : 2rem !important;
 }
 .content {
     background-color : var(--clr-Yellow-500);
+    padding :1.5rem;
+    display : grid;
+    place-content : center;
+    gap : 1rem;
 }
 .media {
     background-color : var(--clr-Purple-500);
+    color : var(--clr-White);
+    text-align : center;
+    display : grid;
+    place-content :center;
+    gap :1rem;
+    padding :2rem !important;
+}
+.media img {
+    max-width : 10rem;
+    margin-inline : auto;
 }
 .manage {
     background-color : var(--clr-White);
+    position : relative;
+   overflow-x : hidden;
+}
+.manage img {
+    position : relative;
+    max-width : 100%;
+    right :-2rem;
+    margin-bottom : 1rem;
 }
 .posting {
     background-color : var(--clr-Yellow-500);
+    position : relative;
+    overflow : hidden;
+
+}
+.posting img {
+    position : absolute;
+    bottom : -4.2rem;
+    left :1.4rem;
 }
 .schedule {
+    display : grid;
+    place-content : center;
+    gap :1rem;
     background-color : var(--clr-Purple-100);
+    padding-left :1.5rem !important;
+    overflow :hidden;
+}
+.schedule img {
+    max-width : 100%;
+    position :relative;
+    right : -1.5rem;
 }
 .audience {
     background-color :var(--clr-White);
+    display : grid;
+    place-content :center;
+    gap:1rem;
+   
 }
 .followers {
     background-color : var(--clr-Purple-500);
+    display :grid;
+    place-items : center;
+    grid-template-columns : 1fr 1fr;
+    gap : 1rem;
+    color :white;
+    padding : 0 !important;
 }
 /* layout styles */
 .bento-grid-container {
     display : grid;
     grid-template-rows : 13rem 13rem 13rem;
     grid-template-columns : 1fr 2fr 1fr;
+    grid-template-areas : 
+    'column1 column2 column3'
+    'column1 column2 column3'
+    'column1 column4 column4';
     max-width : 60rem;
     margin-inline : auto;
+    gap:1rem;
 }
 .bento-grid-container > * ,.inside-elements{
     display : grid;
+    gap : 1rem;
+}
+.column-one {
+    grid-area : column1;
+}
+.column-two {
+    grid-area : column2;
+}
+.column-three {
+    grid-area : column3;
+}
+.column-four {
+    grid-area : column4;
+}
+.inside-elements {
+    grid-template-columns : 1fr 1fr;
+}
+
+.inside-elements:nth-child(1){
+    grid-template-columns : .95fr 2fr;
+}
+.bento-grid-item--element{
+    border-radius : .5rem;
+    padding :1rem;
+}
+/* media query */
+@media screen and (max-width : 950px){
+    .bento-grid-container {
+       
+        grid-template-rows : 13rem 13rem 13rem 13rem;
+        grid-template-columns : 1fr  1fr;
+        grid-template-areas : 
+        'column2 column3'
+        'column2 column3'
+        'column4 column4'
+        'column1 column1'     
+    }
+    .column-one {
+        grid-template-columns : 1fr 1fr;
+    }
+
+}
+@media screen and (max-width : 650px){
+   .bento-grid-container{
+    grid-template-columns : 1fr;
+    grid-template-rows : auto auto;
+    grid-template-areas : 
+    'column2'
+    'column3'
+    'column4'
+    'column1';
+   }
+   .column-one {
+    grid-template-columns : 1fr;
+   }
+   .inside-elements,.inside-elements:nth-child(1){
+    grid-template-columns : 1fr ;
+   }
+}
+/* text styles */
+h2{
+    font-size :var(--fs-heading);
+    font-weight : var(--fw-500);
+    line-height : .9;
+}
+h1 {
+    font-size : 2.75rem;
+    font-weight :var(--fw-500);
 }
