@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+:root {
+    --clr-Purple-100: hsl(254, 88%, 90%);
+    --clr-Purple-500: hsl(256, 67%, 59%);
+
+    --clr-Yellow-100: hsl(31, 66%, 93%);
+    --clr-Yellow-500: hsl(39, 100%, 71%);
+
+   --clr-White: hsl(0, 0%, 100%);
+    --clr-Black: hsl(0, 0%, 7%);
+    --ff-main : "DM Sans", serif;
+    --fs-body : 1.125rem;
+    --fs-heading : 1.75rem;
+
+    --fw-400 : 400;
+    --fw-500:500;
+
+}
+*,*::before,*::after {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+img {
+    max-width : 80%;
+    display : block;
+}
+body {
+    font-family : var(--ff-main);
+    font-weight : var(--fw-main);
+    line-height : 1.1;
+    color : var(--clr-Black);
+    background-color : #f9f9f9;
+    padding : 2rem 1rem;
+}
+/* ui components  */
+.create {
+    background-color : var(--clr-Yellow-100);
+}
+.content {
+    background-color : var(--clr-Yellow-500);
+}
+.media {
+    background-color : var(--clr-Purple-500);
+}
+.manage {
+    background-color : var(--clr-White);
+}
+.posting {
+    background-color : var(--clr-Yellow-500);
+}
+.schedule {
+    background-color : var(--clr-Purple-100);
+}
+.audience {
+    background-color :var(--clr-White);
+}
+.followers {
+    background-color : var(--clr-Purple-500);
+}
+/* layout styles */
+.bento-grid-container {
+    display : grid;
+    grid-template-rows : 13rem 13rem 13rem;
+    grid-template-columns : 1fr 2fr 1fr;
+    max-width : 60rem;
+    margin-inline : auto;
+}
+.bento-grid-container > * ,.inside-elements{
+    display : grid;
+}
